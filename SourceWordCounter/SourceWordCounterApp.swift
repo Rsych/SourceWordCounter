@@ -16,5 +16,6 @@ struct SourceWordCounterApp: App {
             ContentView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
+        .windowStyle(.hiddenTitleBar)
     }
 }
