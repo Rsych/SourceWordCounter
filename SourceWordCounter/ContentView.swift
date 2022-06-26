@@ -7,8 +7,20 @@
 
 import SwiftUI
 import CoreData
+enum CurrentTab: String, CaseIterable {
+    case home = "house"
+    case chart = "chart.bar.xaxis"
+    case history = "doc.on.doc"
+    case settings = "gear.badge.xmark"
+}
 
 struct ContentView: View {
+    @State var currentTab: CurrentTab = .home
+    
+    @Namespace var animation
+    
+    let numOfCases = CurrentTab.allCases.count
+    
     @Environment(\.managedObjectContext) private var viewContext
 
     @FetchRequest(
@@ -37,7 +49,18 @@ struct ContentView: View {
 //            }
 //            Text("Select an item")
 //        }
-        HomeView()
+        HStack(alignment: .top, spacing: 0) {
+            sideMenu
+            switch currentTab {
+            case .home:
+                HomeView()
+            default:
+                Color.red
+            }
+        }
+        .frame(minWidth: getRect().width / 2, idealWidth: getRect().width / 1.75, maxWidth: getRect().width, minHeight: getRect().height / 2, idealHeight: getRect().height / 1.75, maxHeight: getRect().height, alignment: .leading)
+        .background(.thinMaterial)
+        .buttonStyle(.borderless)
     }
 
     private func addItem() {
@@ -70,6 +93,35 @@ struct ContentView: View {
             }
         }
     }
+    @ViewBuilder
+    func MenuButton(image: String) -> some View {
+        Button {
+            withAnimation(.interactiveSpring()) {
+                self.currentTab = CurrentTab(rawValue: image) ?? .home
+            }
+            
+            print(currentTab)
+        } label: {
+            Image(systemName: image)
+                .resizable()
+                .renderingMode(.template)
+                .aspectRatio(contentMode: .fit)
+                .foregroundColor(currentTab.rawValue == image ? .white : .gray)
+                .frame(width: 22, height: 22)
+                .frame(width: 80, height: 50)
+                .overlay(alignment: .trailing) {
+                    HStack {
+                        if currentTab.rawValue == image {
+                            Capsule()
+                                .fill(.white)
+                                .matchedGeometryEffect(id: "tab", in: animation)
+                                .frame(width: 2, height: 40)
+                        }
+                    }
+                }
+                .contentShape(Rectangle())
+        }
+    }
 }
 
 private let itemFormatter: DateFormatter = {
@@ -82,5 +134,37 @@ private let itemFormatter: DateFormatter = {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+    }
+}
+
+extension ContentView {
+    private var sideMenu: some View {
+        VStack(alignment: .leading, spacing: 20) {
+            ForEach(CurrentTab.allCases, id: \.self) { tab in
+                MenuButton(image: tab.rawValue)
+                if tab == .history {
+                    Spacer()
+                }
+            }
+        }
+        .padding(.top, 60)
+        .frame(width: 85)
+        .frame(maxHeight: .infinity, alignment: .top)
+        .background {
+            ZStack {
+                Color.black
+                    .padding(.trailing, 30)
+                Color.black
+                    .cornerRadius(15)
+                    .shadow(color: .black.opacity(0.04), radius: 5, x: 5, y: 0)
+            }
+            .ignoresSafeArea()
+        }
+    }
+}
+
+extension View {
+    func getRect() -> CGRect {
+        return NSScreen.main!.frame
     }
 }

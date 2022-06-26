@@ -16,7 +16,7 @@
 		71EECCFC2868BA9C00C8942F /* SourceWordCounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EECCFB2868BA9C00C8942F /* SourceWordCounterTests.swift */; };
 		71EECD062868BA9C00C8942F /* SourceWordCounterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EECD052868BA9C00C8942F /* SourceWordCounterUITests.swift */; };
 		71EECD082868BA9C00C8942F /* SourceWordCounterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EECD072868BA9C00C8942F /* SourceWordCounterUITestsLaunchTests.swift */; };
-		71EECD152868BB3300C8942F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EECD142868BB3300C8942F /* HomeView.swift */; };
+		71EECD172868CFB400C8942F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EECD162868CFB400C8942F /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +50,7 @@
 		71EECD012868BA9C00C8942F /* SourceWordCounterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SourceWordCounterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		71EECD052868BA9C00C8942F /* SourceWordCounterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceWordCounterUITests.swift; sourceTree = "<group>"; };
 		71EECD072868BA9C00C8942F /* SourceWordCounterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceWordCounterUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		71EECD142868BB3300C8942F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		71EECD162868CFB400C8942F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,7 +103,7 @@
 			children = (
 				71EECCE42868BA9B00C8942F /* SourceWordCounterApp.swift */,
 				71EECCE62868BA9B00C8942F /* ContentView.swift */,
-				71EECD142868BB3300C8942F /* HomeView.swift */,
+				71EECD162868CFB400C8942F /* HomeView.swift */,
 				71EECCE82868BA9C00C8942F /* Assets.xcassets */,
 				71EECCED2868BA9C00C8942F /* Persistence.swift */,
 				71EECCF22868BA9C00C8942F /* SourceWordCounter.entitlements */,
@@ -271,7 +271,7 @@
 				71EECCEE2868BA9C00C8942F /* Persistence.swift in Sources */,
 				71EECCE72868BA9B00C8942F /* ContentView.swift in Sources */,
 				71EECCE52868BA9B00C8942F /* SourceWordCounterApp.swift in Sources */,
-				71EECD152868BB3300C8942F /* HomeView.swift in Sources */,
+				71EECD172868CFB400C8942F /* HomeView.swift in Sources */,
 				71EECCF12868BA9C00C8942F /* SourceWordCounter.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
