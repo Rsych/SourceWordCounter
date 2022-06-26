@@ -58,7 +58,11 @@ struct ContentView: View {
                 Color.red
             }
         }
-        .frame(minWidth: getRect().width / 2, idealWidth: getRect().width / 1.75, maxWidth: getRect().width, minHeight: getRect().height / 2, idealHeight: getRect().height / 1.75, maxHeight: getRect().height, alignment: .leading)
+        #if os(macOS)
+        .frame(minWidth: getRect().width / 1.5, idealWidth: getRect().width / 1.4, maxWidth: getRect().width, minHeight: getRect().height / 1.5 , idealHeight: getRect().height / 1.4, maxHeight: getRect().height, alignment: .leading)
+        #else
+        .frame(alignment: .leading)
+        #endif
         .background(.thinMaterial)
         .buttonStyle(.borderless)
     }
@@ -158,13 +162,19 @@ extension ContentView {
                     .cornerRadius(15)
                     .shadow(color: .black.opacity(0.04), radius: 5, x: 5, y: 0)
             }
+            #if os(macOS)
             .ignoresSafeArea()
+            #else
+            .ignoresSafeArea(.all, edges: .bottom)
+            #endif
         }
     }
 }
 
 extension View {
+    #if os(macOS)
     func getRect() -> CGRect {
         return NSScreen.main!.frame
     }
+    #endif
 }

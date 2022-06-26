@@ -14,8 +14,11 @@ struct SourceWordCounterApp: App {
     var body: some Scene {
         WindowGroup {
             ContentView()
+//                .preferredColorScheme(.dark)
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
+        #if os(macOS)
         .windowStyle(.hiddenTitleBar)
+        #endif
     }
 }
