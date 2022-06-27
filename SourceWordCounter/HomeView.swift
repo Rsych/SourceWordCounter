@@ -34,11 +34,11 @@ struct HomeView: View {
         }
         .onAppear {
            originalText = UserDefaults.standard.loadText()
-            debugPrint("**** Original text : \(originalText)")
+//            debugPrint("**** Original text : \(originalText)")
         }
         .onDisappear {
             UserDefaults.standard.saveText(value: originalText)
-            debugPrint("**** Original text : \(originalText)")
+//            debugPrint("**** Original text : \(originalText)")
         }
     }
     func countWords(_ string: String) -> Int {
