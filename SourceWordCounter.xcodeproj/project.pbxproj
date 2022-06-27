@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		71036CA8286A4D5C00BE6C35 /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71036CA7286A4D5C00BE6C35 /* UserDefaults+Extension.swift */; };
 		71EECCE52868BA9B00C8942F /* SourceWordCounterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EECCE42868BA9B00C8942F /* SourceWordCounterApp.swift */; };
 		71EECCE72868BA9B00C8942F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EECCE62868BA9B00C8942F /* ContentView.swift */; };
 		71EECCE92868BA9C00C8942F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71EECCE82868BA9C00C8942F /* Assets.xcassets */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		71036CA7286A4D5C00BE6C35 /* UserDefaults+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extension.swift"; sourceTree = "<group>"; };
 		71EECCE12868BA9B00C8942F /* SourceWordCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SourceWordCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71EECCE42868BA9B00C8942F /* SourceWordCounterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceWordCounterApp.swift; sourceTree = "<group>"; };
 		71EECCE62868BA9B00C8942F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 				71EECCE42868BA9B00C8942F /* SourceWordCounterApp.swift */,
 				71EECCE62868BA9B00C8942F /* ContentView.swift */,
 				71EECD162868CFB400C8942F /* HomeView.swift */,
+				71036CA7286A4D5C00BE6C35 /* UserDefaults+Extension.swift */,
 				71EECCE82868BA9C00C8942F /* Assets.xcassets */,
 				71EECCED2868BA9C00C8942F /* Persistence.swift */,
 				71EECCF22868BA9C00C8942F /* SourceWordCounter.entitlements */,
@@ -272,6 +275,7 @@
 				71EECCE72868BA9B00C8942F /* ContentView.swift in Sources */,
 				71EECCE52868BA9B00C8942F /* SourceWordCounterApp.swift in Sources */,
 				71EECD172868CFB400C8942F /* HomeView.swift in Sources */,
+				71036CA8286A4D5C00BE6C35 /* UserDefaults+Extension.swift in Sources */,
 				71EECCF12868BA9C00C8942F /* SourceWordCounter.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

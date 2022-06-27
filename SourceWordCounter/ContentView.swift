@@ -176,5 +176,9 @@ extension View {
     func getRect() -> CGRect {
         return NSScreen.main!.frame
     }
+    
+    func getCurrentScreenRect() -> CGRect {
+        return NSScreen.main!.visibleFrame
+    }
     #endif
 }

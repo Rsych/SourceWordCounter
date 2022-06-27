@@ -8,11 +8,43 @@
 import SwiftUI
 
 struct HomeView: View {
+    @State var originalText = ""
+    @State var wordCount: Int = 0
+    
+    let saveKey = "SavedData"
+
     var body: some View {
-        HStack {
-            Text("Hello, World!")
+        VStack(alignment: .leading) {
+            Text("\(wordCount)")
+            TextEditor(text: $originalText)
+                .frame(height: 400)
+                .frame(maxWidth: .infinity)
+                .padding([.top, .bottom, .trailing])
+                .onChange(of: originalText) {
+                    wordCount = countWords($0)
+                }
             Spacer()
+            Button {
+                originalText = ""
+                UserDefaults.standard.removeTextFromKey()
+            } label: {
+                Text("Remove all")
+            }
+
         }
+        .onAppear {
+           originalText = UserDefaults.standard.loadText()
+            debugPrint("**** Original text : \(originalText)")
+        }
+        .onDisappear {
+            UserDefaults.standard.saveText(value: originalText)
+            debugPrint("**** Original text : \(originalText)")
+        }
+    }
+    func countWords(_ string: String) -> Int {
+        let components = string.components(separatedBy: .whitespacesAndNewlines)
+        let words = components.filter{ !$0.isEmpty }
+        return words.count
     }
 }
 
