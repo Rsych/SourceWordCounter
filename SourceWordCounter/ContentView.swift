@@ -172,9 +172,15 @@ extension ContentView {
 }
 
 extension View {
-    #if os(macOS)
+#if os(macOS)
     func getRect() -> CGRect {
         return NSScreen.main!.frame
     }
-    #endif
+#endif
+    
+#if os(macOS)
+    func getCurrentScreenRect() -> CGRect {
+        return NSScreen.main!.visibleFrame
+    }
+#endif
 }
