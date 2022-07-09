@@ -54,8 +54,11 @@ struct ContentView: View {
             switch currentTab {
             case .home:
                 HomeView()
+                    .padding()
             default:
-                Color.red
+//                Color.red
+                BackgroundTest()
+                    .padding()
             }
         }
         #if os(macOS)
