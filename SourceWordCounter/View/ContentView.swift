@@ -62,7 +62,8 @@ struct ContentView: View {
             }
         }
         #if os(macOS)
-        .frame(minWidth: getRect().width / 1.5, idealWidth: getRect().width / 1.4, maxWidth: getRect().width, minHeight: getRect().height / 1.5 , idealHeight: getRect().height / 1.4, maxHeight: getRect().height, alignment: .leading)
+//        .frame(minWidth: getRect().width / 1.5, idealWidth: getRect().width / 1.4, maxWidth: getRect().width, minHeight: getRect().height / 1.6 , idealHeight: getRect().height / 1.4, maxHeight: getRect().height, alignment: .leading)
+        .frame(minWidth: getRect().width / 1.4, idealWidth: getRect().width / 1.4, maxWidth: getRect().width, minHeight: getRect().height / 1.4 , idealHeight: getRect().height / 1.4, maxHeight: getRect().height, alignment: .leading)
         #else
         .frame(alignment: .leading)
         #endif

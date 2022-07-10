@@ -40,7 +40,7 @@ struct HomeView: View {
                 .padding()
                 
             }
-            .frame(minWidth: getRect().width / 1.7, idealWidth: getRect().width / 1.6, maxWidth: getRect().width, minHeight: getRect().height / 1.7 , idealHeight: getRect().height / 1.5, maxHeight: getRect().height, alignment: .leading)
+            .frame(minWidth: getRect().width / 1.8, idealWidth: getRect().width / 1.8, maxWidth: getRect().width, minHeight: getRect().height / 1.7 , idealHeight: getRect().height / 1.5, maxHeight: getRect().height, alignment: .leading)
             .padding([.top, .trailing])
             
             Spacer()
