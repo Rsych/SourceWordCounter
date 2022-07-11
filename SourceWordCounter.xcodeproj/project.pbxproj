@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		71036CA8286A4D5C00BE6C35 /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71036CA7286A4D5C00BE6C35 /* UserDefaults+Extension.swift */; };
+		715890BE287A1BBE00EA7330 /* NSTextView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715890BD287A1BBE00EA7330 /* NSTextView+Extension.swift */; };
+		715890C2287A1FD600EA7330 /* BackgroundTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715890C1287A1FD600EA7330 /* BackgroundTest.swift */; };
 		71EECCE52868BA9B00C8942F /* SourceWordCounterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EECCE42868BA9B00C8942F /* SourceWordCounterApp.swift */; };
 		71EECCE72868BA9B00C8942F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EECCE62868BA9B00C8942F /* ContentView.swift */; };
 		71EECCE92868BA9C00C8942F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71EECCE82868BA9C00C8942F /* Assets.xcassets */; };
@@ -15,8 +17,6 @@
 		71EECCEE2868BA9C00C8942F /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EECCED2868BA9C00C8942F /* Persistence.swift */; };
 		71EECCF12868BA9C00C8942F /* SourceWordCounter.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 71EECCEF2868BA9C00C8942F /* SourceWordCounter.xcdatamodeld */; };
 		71EECCFC2868BA9C00C8942F /* SourceWordCounterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EECCFB2868BA9C00C8942F /* SourceWordCounterTests.swift */; };
-		71EECD062868BA9C00C8942F /* SourceWordCounterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EECD052868BA9C00C8942F /* SourceWordCounterUITests.swift */; };
-		71EECD082868BA9C00C8942F /* SourceWordCounterUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EECD072868BA9C00C8942F /* SourceWordCounterUITestsLaunchTests.swift */; };
 		71EECD172868CFB400C8942F /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EECD162868CFB400C8942F /* HomeView.swift */; };
 /* End PBXBuildFile section */
 
@@ -28,17 +28,12 @@
 			remoteGlobalIDString = 71EECCE02868BA9B00C8942F;
 			remoteInfo = SourceWordCounter;
 		};
-		71EECD022868BA9C00C8942F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 71EECCD92868BA9B00C8942F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 71EECCE02868BA9B00C8942F;
-			remoteInfo = SourceWordCounter;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		71036CA7286A4D5C00BE6C35 /* UserDefaults+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extension.swift"; sourceTree = "<group>"; };
+		715890BD287A1BBE00EA7330 /* NSTextView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSTextView+Extension.swift"; sourceTree = "<group>"; };
+		715890C1287A1FD600EA7330 /* BackgroundTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundTest.swift; sourceTree = "<group>"; };
 		71EECCE12868BA9B00C8942F /* SourceWordCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SourceWordCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71EECCE42868BA9B00C8942F /* SourceWordCounterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceWordCounterApp.swift; sourceTree = "<group>"; };
 		71EECCE62868BA9B00C8942F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -49,9 +44,6 @@
 		71EECCF22868BA9C00C8942F /* SourceWordCounter.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SourceWordCounter.entitlements; sourceTree = "<group>"; };
 		71EECCF72868BA9C00C8942F /* SourceWordCounterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SourceWordCounterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		71EECCFB2868BA9C00C8942F /* SourceWordCounterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceWordCounterTests.swift; sourceTree = "<group>"; };
-		71EECD012868BA9C00C8942F /* SourceWordCounterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SourceWordCounterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		71EECD052868BA9C00C8942F /* SourceWordCounterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceWordCounterUITests.swift; sourceTree = "<group>"; };
-		71EECD072868BA9C00C8942F /* SourceWordCounterUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceWordCounterUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		71EECD162868CFB400C8942F /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,22 +62,33 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		71EECCFE2868BA9C00C8942F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		715890BF287A1BDB00EA7330 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				715890BD287A1BBE00EA7330 /* NSTextView+Extension.swift */,
+				71036CA7286A4D5C00BE6C35 /* UserDefaults+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		715890C0287A1BE700EA7330 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				71EECCE62868BA9B00C8942F /* ContentView.swift */,
+				715890C1287A1FD600EA7330 /* BackgroundTest.swift */,
+				71EECD162868CFB400C8942F /* HomeView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		71EECCD82868BA9B00C8942F = {
 			isa = PBXGroup;
 			children = (
 				71EECCE32868BA9B00C8942F /* SourceWordCounter */,
 				71EECCFA2868BA9C00C8942F /* SourceWordCounterTests */,
-				71EECD042868BA9C00C8942F /* SourceWordCounterUITests */,
 				71EECCE22868BA9B00C8942F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -95,7 +98,6 @@
 			children = (
 				71EECCE12868BA9B00C8942F /* SourceWordCounter.app */,
 				71EECCF72868BA9C00C8942F /* SourceWordCounterTests.xctest */,
-				71EECD012868BA9C00C8942F /* SourceWordCounterUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -103,10 +105,9 @@
 		71EECCE32868BA9B00C8942F /* SourceWordCounter */ = {
 			isa = PBXGroup;
 			children = (
+				715890BF287A1BDB00EA7330 /* Extension */,
 				71EECCE42868BA9B00C8942F /* SourceWordCounterApp.swift */,
-				71EECCE62868BA9B00C8942F /* ContentView.swift */,
-				71EECD162868CFB400C8942F /* HomeView.swift */,
-				71036CA7286A4D5C00BE6C35 /* UserDefaults+Extension.swift */,
+				715890C0287A1BE700EA7330 /* View */,
 				71EECCE82868BA9C00C8942F /* Assets.xcassets */,
 				71EECCED2868BA9C00C8942F /* Persistence.swift */,
 				71EECCF22868BA9C00C8942F /* SourceWordCounter.entitlements */,
@@ -130,15 +131,6 @@
 				71EECCFB2868BA9C00C8942F /* SourceWordCounterTests.swift */,
 			);
 			path = SourceWordCounterTests;
-			sourceTree = "<group>";
-		};
-		71EECD042868BA9C00C8942F /* SourceWordCounterUITests */ = {
-			isa = PBXGroup;
-			children = (
-				71EECD052868BA9C00C8942F /* SourceWordCounterUITests.swift */,
-				71EECD072868BA9C00C8942F /* SourceWordCounterUITestsLaunchTests.swift */,
-			);
-			path = SourceWordCounterUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,24 +171,6 @@
 			productReference = 71EECCF72868BA9C00C8942F /* SourceWordCounterTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		71EECD002868BA9C00C8942F /* SourceWordCounterUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 71EECD112868BA9C00C8942F /* Build configuration list for PBXNativeTarget "SourceWordCounterUITests" */;
-			buildPhases = (
-				71EECCFD2868BA9C00C8942F /* Sources */,
-				71EECCFE2868BA9C00C8942F /* Frameworks */,
-				71EECCFF2868BA9C00C8942F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				71EECD032868BA9C00C8942F /* PBXTargetDependency */,
-			);
-			name = SourceWordCounterUITests;
-			productName = SourceWordCounterUITests;
-			productReference = 71EECD012868BA9C00C8942F /* SourceWordCounterUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -211,10 +185,6 @@
 						CreatedOnToolsVersion = 14.0;
 					};
 					71EECCF62868BA9C00C8942F = {
-						CreatedOnToolsVersion = 14.0;
-						TestTargetID = 71EECCE02868BA9B00C8942F;
-					};
-					71EECD002868BA9C00C8942F = {
 						CreatedOnToolsVersion = 14.0;
 						TestTargetID = 71EECCE02868BA9B00C8942F;
 					};
@@ -235,7 +205,6 @@
 			targets = (
 				71EECCE02868BA9B00C8942F /* SourceWordCounter */,
 				71EECCF62868BA9C00C8942F /* SourceWordCounterTests */,
-				71EECD002868BA9C00C8942F /* SourceWordCounterUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -257,13 +226,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		71EECCFF2868BA9C00C8942F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -276,7 +238,9 @@
 				71EECCE52868BA9B00C8942F /* SourceWordCounterApp.swift in Sources */,
 				71EECD172868CFB400C8942F /* HomeView.swift in Sources */,
 				71036CA8286A4D5C00BE6C35 /* UserDefaults+Extension.swift in Sources */,
+				715890BE287A1BBE00EA7330 /* NSTextView+Extension.swift in Sources */,
 				71EECCF12868BA9C00C8942F /* SourceWordCounter.xcdatamodeld in Sources */,
+				715890C2287A1FD600EA7330 /* BackgroundTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,15 +252,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		71EECCFD2868BA9C00C8942F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				71EECD082868BA9C00C8942F /* SourceWordCounterUITestsLaunchTests.swift in Sources */,
-				71EECD062868BA9C00C8942F /* SourceWordCounterUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -304,11 +259,6 @@
 			isa = PBXTargetDependency;
 			target = 71EECCE02868BA9B00C8942F /* SourceWordCounter */;
 			targetProxy = 71EECCF82868BA9C00C8942F /* PBXContainerItemProxy */;
-		};
-		71EECD032868BA9C00C8942F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 71EECCE02868BA9B00C8942F /* SourceWordCounter */;
-			targetProxy = 71EECD022868BA9C00C8942F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -363,7 +313,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -417,7 +368,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -442,10 +394,12 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = net.naolin.SourceWordCounter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -474,10 +428,12 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = net.naolin.SourceWordCounter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -494,12 +450,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = G6V85GALCN;
 				GENERATE_INFOPLIST_FILE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = net.naolin.SourceWordCounterTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -513,52 +470,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = G6V85GALCN;
 				GENERATE_INFOPLIST_FILE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = net.naolin.SourceWordCounterTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SourceWordCounter.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SourceWordCounter";
-			};
-			name = Release;
-		};
-		71EECD122868BA9C00C8942F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = G6V85GALCN;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = net.naolin.SourceWordCounterUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = SourceWordCounter;
-			};
-			name = Debug;
-		};
-		71EECD132868BA9C00C8942F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = G6V85GALCN;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = net.naolin.SourceWordCounterUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = SourceWordCounter;
 			};
 			name = Release;
 		};
@@ -588,15 +512,6 @@
 			buildConfigurations = (
 				71EECD0F2868BA9C00C8942F /* Debug */,
 				71EECD102868BA9C00C8942F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		71EECD112868BA9C00C8942F /* Build configuration list for PBXNativeTarget "SourceWordCounterUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				71EECD122868BA9C00C8942F /* Debug */,
-				71EECD132868BA9C00C8942F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

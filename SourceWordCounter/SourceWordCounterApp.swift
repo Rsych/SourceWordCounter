@@ -9,13 +9,13 @@ import SwiftUI
 
 @main
 struct SourceWordCounterApp: App {
-    let persistenceController = PersistenceController.shared
+//    let persistenceController = PersistenceController.shared
 
     var body: some Scene {
         WindowGroup {
             ContentView()
 //                .preferredColorScheme(.dark)
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+//                .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
         #if os(macOS)
         .windowStyle(.hiddenTitleBar)

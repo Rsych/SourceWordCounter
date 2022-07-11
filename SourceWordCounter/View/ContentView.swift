@@ -21,12 +21,12 @@ struct ContentView: View {
     
     let numOfCases = CurrentTab.allCases.count
     
-    @Environment(\.managedObjectContext) private var viewContext
+//    @Environment(\.managedObjectContext) private var viewContext
 
-    @FetchRequest(
-        sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
-        animation: .default)
-    private var items: FetchedResults<Item>
+//    @FetchRequest(
+//        sortDescriptors: [NSSortDescriptor(keyPath: \Item.timestamp, ascending: true)],
+//        animation: .default)
+//    private var items: FetchedResults<Item>
 
     var body: some View {
 //        NavigationView {
@@ -54,12 +54,16 @@ struct ContentView: View {
             switch currentTab {
             case .home:
                 HomeView()
+                    .padding()
             default:
-                Color.red
+//                Color.red
+                BackgroundTest()
+                    .padding()
             }
         }
         #if os(macOS)
-        .frame(minWidth: getRect().width / 1.5, idealWidth: getRect().width / 1.4, maxWidth: getRect().width, minHeight: getRect().height / 1.5 , idealHeight: getRect().height / 1.4, maxHeight: getRect().height, alignment: .leading)
+//        .frame(minWidth: getRect().width / 1.5, idealWidth: getRect().width / 1.4, maxWidth: getRect().width, minHeight: getRect().height / 1.6 , idealHeight: getRect().height / 1.4, maxHeight: getRect().height, alignment: .leading)
+        .frame(minWidth: getRect().width / 1.4, idealWidth: getRect().width / 1.4, maxWidth: getRect().width, minHeight: getRect().height / 1.4 , idealHeight: getRect().height / 1.4, maxHeight: getRect().height, alignment: .leading)
         #else
         .frame(alignment: .leading)
         #endif
@@ -67,36 +71,36 @@ struct ContentView: View {
         .buttonStyle(.borderless)
     }
 
-    private func addItem() {
-        withAnimation {
-            let newItem = Item(context: viewContext)
-            newItem.timestamp = Date()
-
-            do {
-                try viewContext.save()
-            } catch {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                let nsError = error as NSError
-                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
-            }
-        }
-    }
-
-    private func deleteItems(offsets: IndexSet) {
-        withAnimation {
-            offsets.map { items[$0] }.forEach(viewContext.delete)
-
-            do {
-                try viewContext.save()
-            } catch {
-                // Replace this implementation with code to handle the error appropriately.
-                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
-                let nsError = error as NSError
-                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
-            }
-        }
-    }
+//    private func addItem() {
+//        withAnimation {
+//            let newItem = Item(context: viewContext)
+//            newItem.timestamp = Date()
+//
+//            do {
+//                try viewContext.save()
+//            } catch {
+//                // Replace this implementation with code to handle the error appropriately.
+//                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+//                let nsError = error as NSError
+//                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
+//            }
+//        }
+//    }
+//
+//    private func deleteItems(offsets: IndexSet) {
+//        withAnimation {
+//            offsets.map { items[$0] }.forEach(viewContext.delete)
+//
+//            do {
+//                try viewContext.save()
+//            } catch {
+//                // Replace this implementation with code to handle the error appropriately.
+//                // fatalError() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.
+//                let nsError = error as NSError
+//                fatalError("Unresolved error \(nsError), \(nsError.userInfo)")
+//            }
+//        }
+//    }
     @ViewBuilder
     func MenuButton(image: String) -> some View {
         Button {
@@ -137,7 +141,8 @@ private let itemFormatter: DateFormatter = {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+//        ContentView().environment(\.managedObjectContext, PersistenceController.preview.container.viewContext)
+        ContentView()
     }
 }
 
