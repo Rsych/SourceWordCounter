@@ -34,7 +34,7 @@ struct HomeView: View {
             Button {
                 removeTextField()
             } label: {
-                Text("Remove all")
+                Text("Remove all".localized)
             }
         }
         .onAppear {
