@@ -10,6 +10,8 @@
 		71036CA8286A4D5C00BE6C35 /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71036CA7286A4D5C00BE6C35 /* UserDefaults+Extension.swift */; };
 		715890BE287A1BBE00EA7330 /* NSTextView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715890BD287A1BBE00EA7330 /* NSTextView+Extension.swift */; };
 		715890C2287A1FD600EA7330 /* BackgroundTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 715890C1287A1FD600EA7330 /* BackgroundTest.swift */; };
+		71D7ABF228873CA20046FF1C /* NSColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D7ABF128873CA20046FF1C /* NSColor+Extension.swift */; };
+		71D7ABF528873CE90046FF1C /* ColorProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71D7ABF428873CE90046FF1C /* ColorProvider.swift */; };
 		71EECCE52868BA9B00C8942F /* SourceWordCounterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EECCE42868BA9B00C8942F /* SourceWordCounterApp.swift */; };
 		71EECCE72868BA9B00C8942F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71EECCE62868BA9B00C8942F /* ContentView.swift */; };
 		71EECCE92868BA9C00C8942F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71EECCE82868BA9C00C8942F /* Assets.xcassets */; };
@@ -34,6 +36,8 @@
 		71036CA7286A4D5C00BE6C35 /* UserDefaults+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extension.swift"; sourceTree = "<group>"; };
 		715890BD287A1BBE00EA7330 /* NSTextView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSTextView+Extension.swift"; sourceTree = "<group>"; };
 		715890C1287A1FD600EA7330 /* BackgroundTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundTest.swift; sourceTree = "<group>"; };
+		71D7ABF128873CA20046FF1C /* NSColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSColor+Extension.swift"; sourceTree = "<group>"; };
+		71D7ABF428873CE90046FF1C /* ColorProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorProvider.swift; sourceTree = "<group>"; };
 		71EECCE12868BA9B00C8942F /* SourceWordCounter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SourceWordCounter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71EECCE42868BA9B00C8942F /* SourceWordCounterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SourceWordCounterApp.swift; sourceTree = "<group>"; };
 		71EECCE62868BA9B00C8942F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -70,6 +74,7 @@
 			children = (
 				715890BD287A1BBE00EA7330 /* NSTextView+Extension.swift */,
 				71036CA7286A4D5C00BE6C35 /* UserDefaults+Extension.swift */,
+				71D7ABF128873CA20046FF1C /* NSColor+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -82,6 +87,23 @@
 				71EECD162868CFB400C8942F /* HomeView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		71D7ABF328873CDA0046FF1C /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				715890BF287A1BDB00EA7330 /* Extension */,
+				71D7ABF628873CEE0046FF1C /* Helpers */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		71D7ABF628873CEE0046FF1C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				71D7ABF428873CE90046FF1C /* ColorProvider.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 		71EECCD82868BA9B00C8942F = {
@@ -105,7 +127,7 @@
 		71EECCE32868BA9B00C8942F /* SourceWordCounter */ = {
 			isa = PBXGroup;
 			children = (
-				715890BF287A1BDB00EA7330 /* Extension */,
+				71D7ABF328873CDA0046FF1C /* Utilities */,
 				71EECCE42868BA9B00C8942F /* SourceWordCounterApp.swift */,
 				715890C0287A1BE700EA7330 /* View */,
 				71EECCE82868BA9C00C8942F /* Assets.xcassets */,
@@ -236,8 +258,10 @@
 				71EECCEE2868BA9C00C8942F /* Persistence.swift in Sources */,
 				71EECCE72868BA9B00C8942F /* ContentView.swift in Sources */,
 				71EECCE52868BA9B00C8942F /* SourceWordCounterApp.swift in Sources */,
+				71D7ABF228873CA20046FF1C /* NSColor+Extension.swift in Sources */,
 				71EECD172868CFB400C8942F /* HomeView.swift in Sources */,
 				71036CA8286A4D5C00BE6C35 /* UserDefaults+Extension.swift in Sources */,
+				71D7ABF528873CE90046FF1C /* ColorProvider.swift in Sources */,
 				715890BE287A1BBE00EA7330 /* NSTextView+Extension.swift in Sources */,
 				71EECCF12868BA9C00C8942F /* SourceWordCounter.xcdatamodeld in Sources */,
 				715890C2287A1FD600EA7330 /* BackgroundTest.swift in Sources */,

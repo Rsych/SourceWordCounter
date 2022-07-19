@@ -61,6 +61,7 @@ struct ContentView: View {
                     .padding()
             }
         }
+        .background(Color(nsColor: ColorProvider.backgroundColor().withAlphaComponent(0.9)))
         #if os(macOS)
 //        .frame(minWidth: getRect().width / 1.5, idealWidth: getRect().width / 1.4, maxWidth: getRect().width, minHeight: getRect().height / 1.6 , idealHeight: getRect().height / 1.4, maxHeight: getRect().height, alignment: .leading)
         .frame(minWidth: getRect().width / 1.4, idealWidth: getRect().width / 1.4, maxWidth: getRect().width, minHeight: getRect().height / 1.4 , idealHeight: getRect().height / 1.4, maxHeight: getRect().height, alignment: .leading)
